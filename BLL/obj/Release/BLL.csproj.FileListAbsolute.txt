@@ -1,0 +1,55 @@
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN\BLL\bin\Release\BLL.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN\BLL\bin\Release\BLL.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN\BLL\bin\Release\DAL.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN\BLL\bin\Release\Entity.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN\BLL\bin\Release\OtherFunction.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN\BLL\bin\Release\DAL.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN\BLL\bin\Release\Entity.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN\BLL\bin\Release\OtherFunction.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN\BLL\obj\Release\BLL.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN\BLL\obj\Release\BLL.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 27-11-2018 Sin Implementacion de Prorroga\BLL\bin\Release\BLL.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 27-11-2018 Sin Implementacion de Prorroga\BLL\bin\Release\BLL.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 27-11-2018 Sin Implementacion de Prorroga\BLL\bin\Release\DAL.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 27-11-2018 Sin Implementacion de Prorroga\BLL\bin\Release\Entity.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 27-11-2018 Sin Implementacion de Prorroga\BLL\bin\Release\OtherFunction.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 27-11-2018 Sin Implementacion de Prorroga\BLL\bin\Release\DAL.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 27-11-2018 Sin Implementacion de Prorroga\BLL\bin\Release\Entity.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 27-11-2018 Sin Implementacion de Prorroga\BLL\bin\Release\OtherFunction.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 27-11-2018 Sin Implementacion de Prorroga\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 27-11-2018 Sin Implementacion de Prorroga\BLL\obj\Release\BLL.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 27-11-2018 Sin Implementacion de Prorroga\BLL\obj\Release\BLL.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 21-02-2019\BLL\bin\Release\BLL.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 21-02-2019\BLL\bin\Release\BLL.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 21-02-2019\BLL\bin\Release\DAL.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 21-02-2019\BLL\bin\Release\Entity.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 21-02-2019\BLL\bin\Release\OtherFunction.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 21-02-2019\BLL\bin\Release\DAL.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 21-02-2019\BLL\bin\Release\Entity.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 21-02-2019\BLL\bin\Release\OtherFunction.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 21-02-2019\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 21-02-2019\BLL\obj\Release\BLL.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 21-02-2019\BLL\obj\Release\BLL.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 28-02-2019\BLL\bin\Release\BLL.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 28-02-2019\BLL\bin\Release\BLL.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 28-02-2019\BLL\bin\Release\DAL.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 28-02-2019\BLL\bin\Release\Entity.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 28-02-2019\BLL\bin\Release\OtherFunction.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 28-02-2019\BLL\bin\Release\DAL.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 28-02-2019\BLL\bin\Release\Entity.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 28-02-2019\BLL\bin\Release\OtherFunction.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 28-02-2019\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 28-02-2019\BLL\obj\Release\BLL.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 28-02-2019\BLL\obj\Release\BLL.pdb
+E:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\BLL\bin\Release\BLL.dll
+E:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\BLL\bin\Release\BLL.pdb
+E:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\BLL\bin\Release\DAL.dll
+E:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\BLL\bin\Release\Entity.dll
+E:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\BLL\bin\Release\OtherFunction.dll
+E:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\BLL\bin\Release\DAL.pdb
+E:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\BLL\bin\Release\Entity.pdb
+E:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\BLL\bin\Release\OtherFunction.pdb
+E:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
+E:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\BLL\obj\Release\BLL.dll
+E:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\BLL\obj\Release\BLL.pdb

@@ -1,0 +1,122 @@
+﻿body {
+padding-top: 0px;
+}
+
+#Header {
+background-color:#282626;
+
+}
+#Textoheader {
+font-family:Arial;
+font-size:20px;
+text-align:justify;
+color:white;
+margin-top:18px;
+margin-left:5px;
+}
+#Imgheader {
+width:160px;
+}
+
+#Textonav {
+font-family:Tahoma;
+font-size:14px;
+font-weight:bold;
+}
+
+.navbar {
+margin-bottom:0px;
+}
+.LogoTexto {
+margin-left:0px;
+}
+
+.navbar-login {
+width:320px!important;
+padding:10px !important;
+padding-bottom:0px !important;
+}
+
+.navbar-login-session
+{
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.icon-size
+{
+    font-size: 87px;
+}
+
+#usermovement {
+margin-left:320px;
+}
+
+img.tamanio {
+height:400px;
+}
+
+.heightheadercAdmin {   
+ height:65px;
+ 
+}
+.sizeiconuser {
+ width:300px;
+}
+
+.CamposSesion {
+ width:100px;
+}
+
+.Busqueda {
+ margin-left:252px;
+}
+.TextoCentrado {
+    text-align:center;
+}
+.ResetMargin {
+margin-left:0px;
+margin-right:0px;
+}
+
+.Mayusculas {
+text-transform:uppercase;
+}
+.Negritas {
+font-weight:bold;
+}
+.Botones {
+margin-top:30px;
+}
+.AstericoColorTamanio {
+color:red;
+font-size:18px;
+
+
+}
+
+.CamposObligatorios {
+color:red;
+font-size:13px;
+
+
+}
+.Olvidarclave {
+color:#483D8B;
+font-size:13px;
+}
+
+.TextoRecuperarCuenta {
+    color: #483D8B;
+    font-size: 12px;
+}
+
+.BotoneSesion {
+margin-left:15px;
+}
+
+.Seperacion {
+margin-top:20px;
+}
+

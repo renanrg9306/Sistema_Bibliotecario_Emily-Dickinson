@@ -1,0 +1,1498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0F5F2B55-8DED-4128-A5C3-528989116BD9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SistemaBibliotecarioCCNN</RootNamespace>
+    <AssemblyName>SistemaBibliotecarioCCNN</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.0.0\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.10.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.1\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <Private>True</Private>
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.1\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.1.0.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.1.0.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.1.0.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.2.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.2.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.2.0.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.2.0.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.2.0.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.2.0.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.2.0.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.2.0.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.2.0.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Manage.aspx" />
+    <Content Include="Account\OpenAuthProviders.ascx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\fontAwesome\css\font-awesome.css" />
+    <Content Include="Content\fontAwesome\css\font-awesome.min.css" />
+    <Content Include="Content\fontAwesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\images\animated-overlay.gif" />
+    <Content Include="Content\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\images\ui-bg_highlight-soft_100_f6f6f6_1x100.png" />
+    <Content Include="Content\images\ui-bg_highlight-soft_25_0073ea_1x100.png" />
+    <Content Include="Content\images\ui-bg_highlight-soft_50_dddddd_1x100.png" />
+    <Content Include="Content\images\ui-icons_0073ea_256x240.png" />
+    <Content Include="Content\images\ui-icons_444444_256x240.png" />
+    <Content Include="Content\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\images\ui-icons_555555_256x240.png" />
+    <Content Include="Content\images\ui-icons_666666_256x240.png" />
+    <Content Include="Content\images\ui-icons_ff0084_256x240.png" />
+    <Content Include="Content\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.min.css" />
+    <Content Include="Content\jquery-ui.min.css" />
+    <Content Include="Content\jquery.dataTables.min.css" />
+    <Content Include="Content\MisEstilos.css" />
+    <Content Include="Content\OtrasEdiciones.css" />
+    <Content Include="Content\select2.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\sweetalert2.min.css" />
+    <Content Include="Content\Validaciones.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Img\Biblioteca-icono.png" />
+    <Content Include="Img\Foto1CCNN.jpg" />
+    <Content Include="Img\Foto2CCNN.jpg" />
+    <Content Include="Img\Foto3CCNN.jpg" />
+    <Content Include="Img\Foto4CCNN.jpg" />
+    <Content Include="Img\IconEditar.png" />
+    <Content Include="Img\IconEliminar.jpg" />
+    <Content Include="Img\IconNuevo.png" />
+    <Content Include="Img\IMG-20180831-WA0010.jpg" />
+    <Content Include="Img\IMG10.jpg" />
+    <Content Include="Img\IMG12.jpg" />
+    <Content Include="Img\IMG5.jpg" />
+    <Content Include="Img\IMG6.jpg" />
+    <Content Include="Img\IMG7.jpg" />
+    <Content Include="Img\IMG8.jpg" />
+    <Content Include="Img\IMG9.jpg" />
+    <Content Include="Img\logo-ccnn.png" />
+    <Content Include="Img\Logo-footer-ccnn-2019.png" />
+    <Content Include="Img\Trusted-User %281%29.png" />
+    <Content Include="Img\Visitantes.jpg" />
+    <Content Include="Otros\jquery-ui-1.10.4.custom.min.js" />
+    <Content Include="Otros\jquery.dataTables.min.js" />
+    <Content Include="Otros\MisJS.js" />
+    <Content Include="Otros\select2.min.js" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Account\Web.config" />
+    <Content Include="Panel Administracion\Administrador\cAdim.aspx" />
+    <Content Include="Panel Administracion\Anio\cAnio.aspx" />
+    <Content Include="Panel Administracion\Anio\cEdicion.aspx" />
+    <Content Include="Panel Administracion\Autor Materiales\GestionAutores.aspx" />
+    <Content Include="Panel Administracion\Autor Materiales\mAutor.aspx" />
+    <Content Include="Panel Administracion\Bibliotecario\mBibliotecario.aspx" />
+    <Content Include="Panel Administracion\Clasificacion\cClasificacion.aspx" />
+    <Content Include="Panel Administracion\Clasificacion\GestionClasificacion.aspx" />
+    <Content Include="Panel Administracion\Clasificacion\mClasificacion.aspx" />
+    <Content Include="Panel Administracion\Materiales\Audiobooks\cAudiobook.aspx" />
+    <Content Include="Panel Administracion\Materiales\Audiobooks\GestionAudioBooks.aspx" />
+    <Content Include="Panel Administracion\Materiales\Audiobooks\mAudiobooks.aspx" />
+    <Content Include="Panel Administracion\Autor Materiales\cAutorMateriales.aspx" />
+    <Content Include="Panel Administracion\Materiales\Audiobooks\WebFormRpt\RptABxAu_Cla_Both.aspx" />
+    <Content Include="Panel Administracion\Materiales\Audiobooks\WebFormRpt\RptLAu.aspx" />
+    <Content Include="Panel Administracion\Materiales\Audiobooks\WebFormRpt\RptListarAuDis.aspx" />
+    <Content Include="Panel Administracion\Materiales\Libros\cLibros.aspx" />
+    <Content Include="Panel Administracion\Materiales\Libros\GestionLibros.aspx" />
+    <Content Include="Panel Administracion\Materiales\Libros\mLibro.aspx" />
+    <Content Include="Panel Administracion\Materiales\Libros\WebFormRpt\ReportesLibrosV.aspx" />
+    <Content Include="Panel Administracion\Materiales\Libros\WebFormRpt\RptLibrosDisponibles.aspx" />
+    <Content Include="Panel Administracion\Materiales\Libros\WebFormRpt\RptListarLibros.aspx" />
+    <Content Include="Panel Administracion\Materiales\Peliculas\cPelicula.aspx" />
+    <Content Include="Panel Administracion\Materiales\Peliculas\GestionPeliculas.aspx" />
+    <Content Include="Panel Administracion\Materiales\Peliculas\mPelicula.aspx" />
+    <Content Include="Panel Administracion\Materiales\Peliculas\WebFormRpt\ReportePeliculasV.aspx" />
+    <Content Include="Panel Administracion\Materiales\Peliculas\WebFormRpt\RptListarPeliculas.aspx" />
+    <Content Include="Panel Administracion\Materiales\Peliculas\WebFormRpt\RptListPeliculas.aspx" />
+    <Content Include="Panel Administracion\Materiales\Revistas\cRevista.aspx" />
+    <Content Include="Panel Administracion\Materiales\Revistas\GestionRevista.aspx" />
+    <Content Include="Panel Administracion\Materiales\Revistas\mRevista.aspx" />
+    <Content Include="Panel Administracion\Materiales\Revistas\WebFormRpt\ReporteRevistaV.aspx" />
+    <Content Include="Panel Administracion\Materiales\Revistas\WebFormRpt\RptLiRevistaDis.aspx" />
+    <Content Include="Panel Administracion\Materiales\Revistas\WebFormRpt\RptListarRevistas.aspx" />
+    <Content Include="Panel Administracion\Nivel Academico\cNivelAcademico.aspx" />
+    <Content Include="Panel Administracion\Bibliotecario\cBibliotecario.aspx" />
+    <Content Include="Panel Administracion\Administrador\GestionAdmins.aspx" />
+    <Content Include="Panel Administracion\Administrador\DefaultAdmins.aspx" />
+    <Content Include="Panel Administracion\Bibliotecario\GestionBibliotecario.aspx" />
+    <Content Include="Panel Administracion\InicioSesionAdmin.aspx" />
+    <Content Include="Panel Administracion\Administrador\mAdmin.aspx" />
+    <Content Include="Panel Administracion\Nivel Academico\mNivelAcademico.aspx" />
+    <Content Include="Panel Administracion\Prestamos\Domicilio y Sala\cPrestamoAudioBook.aspx" />
+    <Content Include="Panel Administracion\Prestamos\Domicilio y Sala\cPrestamoLibro.aspx" />
+    <Content Include="Panel Administracion\Prestamos\Domicilio y Sala\cPrestamoPelicula.aspx" />
+    <Content Include="Panel Administracion\Prestamos\Domicilio y Sala\cPrestamoRevista.aspx" />
+    <Content Include="Panel Administracion\Prestamos\Domicilio y Sala\GestionPrestamos.aspx" />
+    <Content Include="Panel Administracion\Prestamos\Domicilio y Sala\WebFormRpt\RptHistorialPrestamoVisitante.aspx" />
+    <Content Include="Panel Administracion\Prestamos\Domicilio y Sala\WebFormRpt\RptLiPrestamosRealizados.aspx" />
+    <Content Include="Panel Administracion\Prestamos\Domicilio y Sala\WebFormRpt\RptListarHistorialMaterial.aspx" />
+    <Content Include="Panel Administracion\Prestamos\Domicilio y Sala\WebFormRpt\RptListarPrestamosRecepcionados.aspx" />
+    <Content Include="Panel Administracion\Prestamos\Domicilio y Sala\WebFormRpt\RptPreProrroga.aspx" />
+    <Content Include="Panel Administracion\Prestamos\Prorroga\Prorroga.aspx" />
+    <Content Include="Panel Administracion\Prestamos\RecepcionMaterial\RecepcionMaterial.aspx" />
+    <Content Include="Panel Administracion\RecuperarClaveAdmin.aspx" />
+    <Content Include="Panel Administracion\Registro Entrada\cRegistroEntrada.aspx" />
+    <Content Include="Panel Administracion\Registro Entrada\GestionRegistroEntrada.aspx" />
+    <Content Include="Panel Administracion\Registro Entrada\mRegEntrada.aspx" />
+    <Content Include="Panel Administracion\Reservaciones\GestionReservaciones.aspx" />
+    <Content Include="Panel Administracion\Reservaciones\Reservacion_Prestamo.aspx" />
+    <Content Include="Panel Administracion\Visitantes\cVisitante.aspx" />
+    <Content Include="Panel Administracion\Visitantes\GestionVisitante.aspx" />
+    <Content Include="Panel Administracion\Visitantes\mVisitante.aspx" />
+    <Content Include="Panel Bibliotecario\DefaultBibliotecario.aspx" />
+    <Content Include="Panel Bibliotecario\InicioSesionBibliotecario.aspx" />
+    <Content Include="Panel Bibliotecario\Materiales\AudioBooks\cAudiobook.aspx" />
+    <Content Include="Panel Bibliotecario\Materiales\AudioBooks\GestionAudioBooks_Bibliotecario.aspx" />
+    <Content Include="Panel Bibliotecario\Materiales\AudioBooks\mAudioBook.aspx" />
+    <Content Include="Panel Bibliotecario\Materiales\AudioBooks\WebFormRpt\RptLiABDis.aspx" />
+    <Content Include="Panel Bibliotecario\Materiales\AudioBooks\WebFormRpt\RptLiABByCla_Autor_Both.aspx" />
+    <Content Include="Panel Bibliotecario\Materiales\AudioBooks\WebFormRpt\RptLiAllAB.aspx" />
+    <Content Include="Panel Bibliotecario\Materiales\Libros\cLibro.aspx" />
+    <Content Include="Panel Bibliotecario\Materiales\Libros\GestionLibros_Bibliotecario.aspx" />
+    <Content Include="Panel Bibliotecario\Materiales\Libros\mLibro.aspx" />
+    <Content Include="Panel Bibliotecario\Materiales\Libros\WebFormRpt\RptLiAllLibros.aspx" />
+    <Content Include="Panel Bibliotecario\Materiales\Libros\WebFormRpt\RptLibroV.aspx" />
+    <Content Include="Panel Bibliotecario\Materiales\Libros\WebFormRpt\RptLiLibrosDis.aspx" />
+    <Content Include="Panel Bibliotecario\Materiales\Peliculas\cPeliculas.aspx" />
+    <Content Include="Panel Bibliotecario\Materiales\Peliculas\GestionPeliculas_Bibliotecario.aspx" />
+    <Content Include="Panel Bibliotecario\Materiales\Peliculas\mPelicula.aspx" />
+    <Content Include="Panel Bibliotecario\Materiales\Peliculas\WebFormRptPe\RptAllPeliculas.aspx" />
+    <Content Include="Panel Bibliotecario\Materiales\Peliculas\WebFormRptPe\RptPeliculasDis.aspx" />
+    <Content Include="Panel Bibliotecario\Materiales\Peliculas\WebFormRptPe\RptPeliculasV.aspx" />
+    <Content Include="Panel Bibliotecario\Materiales\Revistas\cRevista.aspx" />
+    <Content Include="Panel Bibliotecario\Materiales\Revistas\GestionRevista_Bibliotecario.aspx" />
+    <Content Include="Panel Bibliotecario\Materiales\Revistas\mRevista.aspx" />
+    <Content Include="Panel Bibliotecario\Materiales\Revistas\WebFormRpt\RptLiRevistas.aspx" />
+    <Content Include="Panel Bibliotecario\Materiales\Revistas\WebFormRpt\RptLiRevistasDis.aspx" />
+    <Content Include="Panel Bibliotecario\Materiales\Revistas\WebFormRpt\RptRevistaV.aspx" />
+    <Content Include="Panel Bibliotecario\mBibliotecario.aspx" />
+    <Content Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\cPrestamoAudiobook.aspx" />
+    <Content Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\cPrestamoLibro.aspx" />
+    <Content Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\cPrestamoPelicula.aspx" />
+    <Content Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\cPrestamoRevista.aspx" />
+    <Content Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\GestionPrestamos_Bibliotecarios.aspx" />
+    <Content Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\RptWebForm\RptHistorialPreMaterial.aspx" />
+    <Content Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\RptWebForm\RptHistPresVi.aspx" />
+    <Content Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\RptWebForm\RptPreRealizados.aspx" />
+    <Content Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\RptWebForm\RptPreRecepcionados.aspx" />
+    <Content Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\RptWebForm\RptPrestamo_Prorroga.aspx" />
+    <Content Include="Panel Bibliotecario\Prestamos\Prorroga\Prorroga.aspx" />
+    <Content Include="Panel Bibliotecario\Prestamos\Recepcion de Material\RecepcionMaterial.aspx" />
+    <Content Include="Panel Bibliotecario\RecuperarClaveBibliotecario.aspx" />
+    <Content Include="Panel Bibliotecario\Reservaciones\GestionReservaciones.aspx" />
+    <Content Include="Panel Bibliotecario\Reservaciones\Reservacion_Prestamo.aspx" />
+    <Content Include="Panel Bibliotecario\Visitantes\cVisitante.aspx" />
+    <Content Include="Panel Bibliotecario\Visitantes\GestionVisitantes.aspx" />
+    <Content Include="Panel Bibliotecario\Visitantes\mVisitante.aspx" />
+    <Content Include="Panel Visitante\DefaultVisitante.aspx" />
+    <Content Include="Panel Visitante\InicioSesionVisitante.aspx" />
+    <Content Include="Panel Visitante\Materiales\AudioBooks.aspx" />
+    <Content Include="Panel Visitante\Reservaciones\GestionReservaciones.aspx" />
+    <Content Include="Panel Visitante\Materiales\Libros.aspx" />
+    <Content Include="Panel Visitante\Materiales\Pelicula.aspx" />
+    <Content Include="Panel Visitante\Prestamos\PrestamosEntregados.aspx" />
+    <Content Include="Panel Visitante\Prestamos\PrestamosPendientes.aspx" />
+    <Content Include="Panel Visitante\Reservaciones\ReservacionesPendienteVisitante.aspx" />
+    <Content Include="Panel Visitante\Reservaciones\ReservacionMaterial.aspx" />
+    <Content Include="Panel Visitante\Materiales\Revista.aspx" />
+    <Content Include="Panel Visitante\RecuperarClaveVisitante.aspx" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\MyJavaScript.js" />
+    <Content Include="Scripts\select2.js" />
+    <Content Include="Scripts\sweetalert2.min.js" />
+    <Content Include="Scripts\WebForms\jquery-datepicker.js" />
+    <Content Include="webfonts\fa-brands-400.svg" />
+    <Content Include="webfonts\fa-regular-400.svg" />
+    <Content Include="webfonts\fa-solid-900.svg" />
+    <Content Include="Panel Administracion\Administracion.Master" />
+    <Content Include="Panel Bibliotecario\Bibliotecario.Master" />
+    <Content Include="Panel Visitante\Visitante.Master" />
+    <Content Include="Content\fontAwesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fontAwesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fontAwesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fontAwesome\fonts\FontAwesome.otf" />
+    <Content Include="Content\fontAwesome\less\animated.less" />
+    <Content Include="Content\fontAwesome\less\bordered-pulled.less" />
+    <Content Include="Content\fontAwesome\less\core.less" />
+    <Content Include="Content\fontAwesome\less\fixed-width.less" />
+    <Content Include="Content\fontAwesome\less\font-awesome.less" />
+    <Content Include="Content\fontAwesome\less\icons.less" />
+    <Content Include="Content\fontAwesome\less\larger.less" />
+    <Content Include="Content\fontAwesome\less\list.less" />
+    <Content Include="Content\fontAwesome\less\mixins.less" />
+    <Content Include="Content\fontAwesome\less\path.less" />
+    <Content Include="Content\fontAwesome\less\rotated-flipped.less" />
+    <Content Include="Content\fontAwesome\less\screen-reader.less" />
+    <Content Include="Content\fontAwesome\less\stacked.less" />
+    <Content Include="Content\fontAwesome\less\variables.less" />
+    <Content Include="Content\fontAwesome\scss\font-awesome.scss" />
+    <Content Include="Content\fontAwesome\scss\_animated.scss" />
+    <Content Include="Content\fontAwesome\scss\_bordered-pulled.scss" />
+    <Content Include="Content\fontAwesome\scss\_core.scss" />
+    <Content Include="Content\fontAwesome\scss\_fixed-width.scss" />
+    <Content Include="Content\fontAwesome\scss\_icons.scss" />
+    <Content Include="Content\fontAwesome\scss\_larger.scss" />
+    <Content Include="Content\fontAwesome\scss\_list.scss" />
+    <Content Include="Content\fontAwesome\scss\_mixins.scss" />
+    <Content Include="Content\fontAwesome\scss\_path.scss" />
+    <Content Include="Content\fontAwesome\scss\_rotated-flipped.scss" />
+    <Content Include="Content\fontAwesome\scss\_screen-reader.scss" />
+    <Content Include="Content\fontAwesome\scss\_stacked.scss" />
+    <Content Include="Content\fontAwesome\scss\_variables.scss" />
+    <Content Include="Content\fontAwesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="DataReports.xsc">
+      <DependentUpon>DataReports.xsd</DependentUpon>
+    </Content>
+    <None Include="DataReports.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataReports.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="DataReports.xss">
+      <DependentUpon>DataReports.xsd</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\SystemBiblioteca.pubxml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Site.Master" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Bundle.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Site.Mobile.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="webfonts\fa-brands-400.eot" />
+    <Content Include="webfonts\fa-brands-400.ttf" />
+    <Content Include="webfonts\fa-brands-400.woff" />
+    <Content Include="webfonts\fa-brands-400.woff2" />
+    <Content Include="webfonts\fa-regular-400.eot" />
+    <Content Include="webfonts\fa-regular-400.ttf" />
+    <Content Include="webfonts\fa-regular-400.woff" />
+    <Content Include="webfonts\fa-regular-400.woff2" />
+    <Content Include="webfonts\fa-solid-900.eot" />
+    <Content Include="webfonts\fa-solid-900.ttf" />
+    <Content Include="webfonts\fa-solid-900.woff" />
+    <Content Include="webfonts\fa-solid-900.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.designer.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataReports.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataReports.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Panel Administracion\Administracion.Master.cs">
+      <DependentUpon>Administracion.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Administracion.Master.designer.cs">
+      <DependentUpon>Administracion.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Administrador\cAdim.aspx.cs">
+      <DependentUpon>cAdim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Administrador\cAdim.aspx.designer.cs">
+      <DependentUpon>cAdim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Anio\cAnio.aspx.cs">
+      <DependentUpon>cAnio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Anio\cAnio.aspx.designer.cs">
+      <DependentUpon>cAnio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Anio\cEdicion.aspx.cs">
+      <DependentUpon>cEdicion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Anio\cEdicion.aspx.designer.cs">
+      <DependentUpon>cEdicion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Autor Materiales\GestionAutores.aspx.cs">
+      <DependentUpon>GestionAutores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Autor Materiales\GestionAutores.aspx.designer.cs">
+      <DependentUpon>GestionAutores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Autor Materiales\mAutor.aspx.cs">
+      <DependentUpon>mAutor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Autor Materiales\mAutor.aspx.designer.cs">
+      <DependentUpon>mAutor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Bibliotecario\mBibliotecario.aspx.cs">
+      <DependentUpon>mBibliotecario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Bibliotecario\mBibliotecario.aspx.designer.cs">
+      <DependentUpon>mBibliotecario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Clasificacion\cClasificacion.aspx.cs">
+      <DependentUpon>cClasificacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Clasificacion\cClasificacion.aspx.designer.cs">
+      <DependentUpon>cClasificacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Clasificacion\GestionClasificacion.aspx.cs">
+      <DependentUpon>GestionClasificacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Clasificacion\GestionClasificacion.aspx.designer.cs">
+      <DependentUpon>GestionClasificacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Clasificacion\mClasificacion.aspx.cs">
+      <DependentUpon>mClasificacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Clasificacion\mClasificacion.aspx.designer.cs">
+      <DependentUpon>mClasificacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Audiobooks\cAudiobook.aspx.cs">
+      <DependentUpon>cAudiobook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Audiobooks\cAudiobook.aspx.designer.cs">
+      <DependentUpon>cAudiobook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Audiobooks\GestionAudioBooks.aspx.cs">
+      <DependentUpon>GestionAudioBooks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Audiobooks\GestionAudioBooks.aspx.designer.cs">
+      <DependentUpon>GestionAudioBooks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Audiobooks\mAudiobooks.aspx.cs">
+      <DependentUpon>mAudiobooks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Audiobooks\mAudiobooks.aspx.designer.cs">
+      <DependentUpon>mAudiobooks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Autor Materiales\cAutorMateriales.aspx.cs">
+      <DependentUpon>cAutorMateriales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Autor Materiales\cAutorMateriales.aspx.designer.cs">
+      <DependentUpon>cAutorMateriales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Audiobooks\WebFormRpt\RptABxAu_Cla_Both.aspx.cs">
+      <DependentUpon>RptABxAu_Cla_Both.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Audiobooks\WebFormRpt\RptABxAu_Cla_Both.aspx.designer.cs">
+      <DependentUpon>RptABxAu_Cla_Both.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Audiobooks\WebFormRpt\RptLAu.aspx.cs">
+      <DependentUpon>RptLAu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Audiobooks\WebFormRpt\RptLAu.aspx.designer.cs">
+      <DependentUpon>RptLAu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Audiobooks\WebFormRpt\RptListarAuDis.aspx.cs">
+      <DependentUpon>RptListarAuDis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Audiobooks\WebFormRpt\RptListarAuDis.aspx.designer.cs">
+      <DependentUpon>RptListarAuDis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Libros\cLibros.aspx.cs">
+      <DependentUpon>cLibros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Libros\cLibros.aspx.designer.cs">
+      <DependentUpon>cLibros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Libros\GestionLibros.aspx.cs">
+      <DependentUpon>GestionLibros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Libros\GestionLibros.aspx.designer.cs">
+      <DependentUpon>GestionLibros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Libros\mLibro.aspx.cs">
+      <DependentUpon>mLibro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Libros\mLibro.aspx.designer.cs">
+      <DependentUpon>mLibro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Libros\WebFormRpt\ReportesLibrosV.aspx.cs">
+      <DependentUpon>ReportesLibrosV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Libros\WebFormRpt\ReportesLibrosV.aspx.designer.cs">
+      <DependentUpon>ReportesLibrosV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Libros\WebFormRpt\RptLibrosDisponibles.aspx.cs">
+      <DependentUpon>RptLibrosDisponibles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Libros\WebFormRpt\RptLibrosDisponibles.aspx.designer.cs">
+      <DependentUpon>RptLibrosDisponibles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Libros\WebFormRpt\RptListarLibros.aspx.cs">
+      <DependentUpon>RptListarLibros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Libros\WebFormRpt\RptListarLibros.aspx.designer.cs">
+      <DependentUpon>RptListarLibros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Peliculas\cPelicula.aspx.cs">
+      <DependentUpon>cPelicula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Peliculas\cPelicula.aspx.designer.cs">
+      <DependentUpon>cPelicula.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Peliculas\GestionPeliculas.aspx.cs">
+      <DependentUpon>GestionPeliculas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Peliculas\GestionPeliculas.aspx.designer.cs">
+      <DependentUpon>GestionPeliculas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Peliculas\mPelicula.aspx.cs">
+      <DependentUpon>mPelicula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Peliculas\mPelicula.aspx.designer.cs">
+      <DependentUpon>mPelicula.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Peliculas\WebFormRpt\ReportePeliculasV.aspx.cs">
+      <DependentUpon>ReportePeliculasV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Peliculas\WebFormRpt\ReportePeliculasV.aspx.designer.cs">
+      <DependentUpon>ReportePeliculasV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Peliculas\WebFormRpt\RptListarPeliculas.aspx.cs">
+      <DependentUpon>RptListarPeliculas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Peliculas\WebFormRpt\RptListarPeliculas.aspx.designer.cs">
+      <DependentUpon>RptListarPeliculas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Peliculas\WebFormRpt\RptListPeliculas.aspx.cs">
+      <DependentUpon>RptListPeliculas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Peliculas\WebFormRpt\RptListPeliculas.aspx.designer.cs">
+      <DependentUpon>RptListPeliculas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Revistas\cRevista.aspx.cs">
+      <DependentUpon>cRevista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Revistas\cRevista.aspx.designer.cs">
+      <DependentUpon>cRevista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Revistas\GestionRevista.aspx.cs">
+      <DependentUpon>GestionRevista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Revistas\GestionRevista.aspx.designer.cs">
+      <DependentUpon>GestionRevista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Revistas\mRevista.aspx.cs">
+      <DependentUpon>mRevista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Revistas\mRevista.aspx.designer.cs">
+      <DependentUpon>mRevista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Revistas\WebFormRpt\ReporteRevistaV.aspx.cs">
+      <DependentUpon>ReporteRevistaV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Revistas\WebFormRpt\ReporteRevistaV.aspx.designer.cs">
+      <DependentUpon>ReporteRevistaV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Revistas\WebFormRpt\RptLiRevistaDis.aspx.cs">
+      <DependentUpon>RptLiRevistaDis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Revistas\WebFormRpt\RptLiRevistaDis.aspx.designer.cs">
+      <DependentUpon>RptLiRevistaDis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Revistas\WebFormRpt\RptListarRevistas.aspx.cs">
+      <DependentUpon>RptListarRevistas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Materiales\Revistas\WebFormRpt\RptListarRevistas.aspx.designer.cs">
+      <DependentUpon>RptListarRevistas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Nivel Academico\cNivelAcademico.aspx.cs">
+      <DependentUpon>cNivelAcademico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Nivel Academico\cNivelAcademico.aspx.designer.cs">
+      <DependentUpon>cNivelAcademico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Bibliotecario\cBibliotecario.aspx.cs">
+      <DependentUpon>cBibliotecario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Bibliotecario\cBibliotecario.aspx.designer.cs">
+      <DependentUpon>cBibliotecario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Administrador\GestionAdmins.aspx.cs">
+      <DependentUpon>GestionAdmins.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Administrador\GestionAdmins.aspx.designer.cs">
+      <DependentUpon>GestionAdmins.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Administrador\DefaultAdmins.aspx.cs">
+      <DependentUpon>DefaultAdmins.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Administrador\DefaultAdmins.aspx.designer.cs">
+      <DependentUpon>DefaultAdmins.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Bibliotecario\GestionBibliotecario.aspx.cs">
+      <DependentUpon>GestionBibliotecario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Bibliotecario\GestionBibliotecario.aspx.designer.cs">
+      <DependentUpon>GestionBibliotecario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\InicioSesionAdmin.aspx.cs">
+      <DependentUpon>InicioSesionAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\InicioSesionAdmin.aspx.designer.cs">
+      <DependentUpon>InicioSesionAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Administrador\mAdmin.aspx.cs">
+      <DependentUpon>mAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Administrador\mAdmin.aspx.designer.cs">
+      <DependentUpon>mAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Nivel Academico\mNivelAcademico.aspx.cs">
+      <DependentUpon>mNivelAcademico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Nivel Academico\mNivelAcademico.aspx.designer.cs">
+      <DependentUpon>mNivelAcademico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Prestamos\Domicilio y Sala\cPrestamoAudioBook.aspx.cs">
+      <DependentUpon>cPrestamoAudioBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Prestamos\Domicilio y Sala\cPrestamoAudioBook.aspx.designer.cs">
+      <DependentUpon>cPrestamoAudioBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Prestamos\Domicilio y Sala\cPrestamoLibro.aspx.cs">
+      <DependentUpon>cPrestamoLibro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Prestamos\Domicilio y Sala\cPrestamoLibro.aspx.designer.cs">
+      <DependentUpon>cPrestamoLibro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Prestamos\Domicilio y Sala\cPrestamoPelicula.aspx.cs">
+      <DependentUpon>cPrestamoPelicula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Prestamos\Domicilio y Sala\cPrestamoPelicula.aspx.designer.cs">
+      <DependentUpon>cPrestamoPelicula.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Prestamos\Domicilio y Sala\cPrestamoRevista.aspx.cs">
+      <DependentUpon>cPrestamoRevista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Prestamos\Domicilio y Sala\cPrestamoRevista.aspx.designer.cs">
+      <DependentUpon>cPrestamoRevista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Prestamos\Domicilio y Sala\GestionPrestamos.aspx.cs">
+      <DependentUpon>GestionPrestamos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Prestamos\Domicilio y Sala\GestionPrestamos.aspx.designer.cs">
+      <DependentUpon>GestionPrestamos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Prestamos\Domicilio y Sala\WebFormRpt\RptHistorialPrestamoVisitante.aspx.cs">
+      <DependentUpon>RptHistorialPrestamoVisitante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Prestamos\Domicilio y Sala\WebFormRpt\RptHistorialPrestamoVisitante.aspx.designer.cs">
+      <DependentUpon>RptHistorialPrestamoVisitante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Prestamos\Domicilio y Sala\WebFormRpt\RptLiPrestamosRealizados.aspx.cs">
+      <DependentUpon>RptLiPrestamosRealizados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Prestamos\Domicilio y Sala\WebFormRpt\RptLiPrestamosRealizados.aspx.designer.cs">
+      <DependentUpon>RptLiPrestamosRealizados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Prestamos\Domicilio y Sala\WebFormRpt\RptListarHistorialMaterial.aspx.cs">
+      <DependentUpon>RptListarHistorialMaterial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Prestamos\Domicilio y Sala\WebFormRpt\RptListarHistorialMaterial.aspx.designer.cs">
+      <DependentUpon>RptListarHistorialMaterial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Prestamos\Domicilio y Sala\WebFormRpt\RptListarPrestamosRecepcionados.aspx.cs">
+      <DependentUpon>RptListarPrestamosRecepcionados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Prestamos\Domicilio y Sala\WebFormRpt\RptListarPrestamosRecepcionados.aspx.designer.cs">
+      <DependentUpon>RptListarPrestamosRecepcionados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Prestamos\Domicilio y Sala\WebFormRpt\RptPreProrroga.aspx.cs">
+      <DependentUpon>RptPreProrroga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Prestamos\Domicilio y Sala\WebFormRpt\RptPreProrroga.aspx.designer.cs">
+      <DependentUpon>RptPreProrroga.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Prestamos\Prorroga\Prorroga.aspx.cs">
+      <DependentUpon>Prorroga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Prestamos\Prorroga\Prorroga.aspx.designer.cs">
+      <DependentUpon>Prorroga.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Prestamos\RecepcionMaterial\RecepcionMaterial.aspx.cs">
+      <DependentUpon>RecepcionMaterial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Prestamos\RecepcionMaterial\RecepcionMaterial.aspx.designer.cs">
+      <DependentUpon>RecepcionMaterial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\RecuperarClaveAdmin.aspx.cs">
+      <DependentUpon>RecuperarClaveAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\RecuperarClaveAdmin.aspx.designer.cs">
+      <DependentUpon>RecuperarClaveAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Registro Entrada\cRegistroEntrada.aspx.cs">
+      <DependentUpon>cRegistroEntrada.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Registro Entrada\cRegistroEntrada.aspx.designer.cs">
+      <DependentUpon>cRegistroEntrada.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Registro Entrada\GestionRegistroEntrada.aspx.cs">
+      <DependentUpon>GestionRegistroEntrada.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Registro Entrada\GestionRegistroEntrada.aspx.designer.cs">
+      <DependentUpon>GestionRegistroEntrada.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Registro Entrada\mRegEntrada.aspx.cs">
+      <DependentUpon>mRegEntrada.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Registro Entrada\mRegEntrada.aspx.designer.cs">
+      <DependentUpon>mRegEntrada.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Reservaciones\GestionReservaciones.aspx.cs">
+      <DependentUpon>GestionReservaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Reservaciones\GestionReservaciones.aspx.designer.cs">
+      <DependentUpon>GestionReservaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Reservaciones\Reservacion_Prestamo.aspx.cs">
+      <DependentUpon>Reservacion_Prestamo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Reservaciones\Reservacion_Prestamo.aspx.designer.cs">
+      <DependentUpon>Reservacion_Prestamo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Visitantes\cVisitante.aspx.cs">
+      <DependentUpon>cVisitante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Visitantes\cVisitante.aspx.designer.cs">
+      <DependentUpon>cVisitante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Visitantes\GestionVisitante.aspx.cs">
+      <DependentUpon>GestionVisitante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Visitantes\GestionVisitante.aspx.designer.cs">
+      <DependentUpon>GestionVisitante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Administracion\Visitantes\mVisitante.aspx.cs">
+      <DependentUpon>mVisitante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Administracion\Visitantes\mVisitante.aspx.designer.cs">
+      <DependentUpon>mVisitante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Bibliotecario.Master.cs">
+      <DependentUpon>Bibliotecario.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Bibliotecario.Master.designer.cs">
+      <DependentUpon>Bibliotecario.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\DefaultBibliotecario.aspx.cs">
+      <DependentUpon>DefaultBibliotecario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\DefaultBibliotecario.aspx.designer.cs">
+      <DependentUpon>DefaultBibliotecario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\InicioSesionBibliotecario.aspx.cs">
+      <DependentUpon>InicioSesionBibliotecario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\InicioSesionBibliotecario.aspx.designer.cs">
+      <DependentUpon>InicioSesionBibliotecario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\AudioBooks\cAudiobook.aspx.cs">
+      <DependentUpon>cAudiobook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\AudioBooks\cAudiobook.aspx.designer.cs">
+      <DependentUpon>cAudiobook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\AudioBooks\GestionAudioBooks_Bibliotecario.aspx.cs">
+      <DependentUpon>GestionAudioBooks_Bibliotecario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\AudioBooks\GestionAudioBooks_Bibliotecario.aspx.designer.cs">
+      <DependentUpon>GestionAudioBooks_Bibliotecario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\AudioBooks\mAudioBook.aspx.cs">
+      <DependentUpon>mAudioBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\AudioBooks\mAudioBook.aspx.designer.cs">
+      <DependentUpon>mAudioBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\AudioBooks\WebFormRpt\RptLiABDis.aspx.cs">
+      <DependentUpon>RptLiABDis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\AudioBooks\WebFormRpt\RptLiABDis.aspx.designer.cs">
+      <DependentUpon>RptLiABDis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\AudioBooks\WebFormRpt\RptLiABByCla_Autor_Both.aspx.cs">
+      <DependentUpon>RptLiABByCla_Autor_Both.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\AudioBooks\WebFormRpt\RptLiABByCla_Autor_Both.aspx.designer.cs">
+      <DependentUpon>RptLiABByCla_Autor_Both.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\AudioBooks\WebFormRpt\RptLiAllAB.aspx.cs">
+      <DependentUpon>RptLiAllAB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\AudioBooks\WebFormRpt\RptLiAllAB.aspx.designer.cs">
+      <DependentUpon>RptLiAllAB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Libros\cLibro.aspx.cs">
+      <DependentUpon>cLibro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Libros\cLibro.aspx.designer.cs">
+      <DependentUpon>cLibro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Libros\GestionLibros_Bibliotecario.aspx.cs">
+      <DependentUpon>GestionLibros_Bibliotecario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Libros\GestionLibros_Bibliotecario.aspx.designer.cs">
+      <DependentUpon>GestionLibros_Bibliotecario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Libros\mLibro.aspx.cs">
+      <DependentUpon>mLibro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Libros\mLibro.aspx.designer.cs">
+      <DependentUpon>mLibro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Libros\WebFormRpt\RptLiAllLibros.aspx.cs">
+      <DependentUpon>RptLiAllLibros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Libros\WebFormRpt\RptLiAllLibros.aspx.designer.cs">
+      <DependentUpon>RptLiAllLibros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Libros\WebFormRpt\RptLibroV.aspx.cs">
+      <DependentUpon>RptLibroV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Libros\WebFormRpt\RptLibroV.aspx.designer.cs">
+      <DependentUpon>RptLibroV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Libros\WebFormRpt\RptLiLibrosDis.aspx.cs">
+      <DependentUpon>RptLiLibrosDis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Libros\WebFormRpt\RptLiLibrosDis.aspx.designer.cs">
+      <DependentUpon>RptLiLibrosDis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Peliculas\cPeliculas.aspx.cs">
+      <DependentUpon>cPeliculas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Peliculas\cPeliculas.aspx.designer.cs">
+      <DependentUpon>cPeliculas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Peliculas\GestionPeliculas_Bibliotecario.aspx.cs">
+      <DependentUpon>GestionPeliculas_Bibliotecario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Peliculas\GestionPeliculas_Bibliotecario.aspx.designer.cs">
+      <DependentUpon>GestionPeliculas_Bibliotecario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Peliculas\mPelicula.aspx.cs">
+      <DependentUpon>mPelicula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Peliculas\mPelicula.aspx.designer.cs">
+      <DependentUpon>mPelicula.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Peliculas\WebFormRptPe\RptAllPeliculas.aspx.cs">
+      <DependentUpon>RptAllPeliculas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Peliculas\WebFormRptPe\RptAllPeliculas.aspx.designer.cs">
+      <DependentUpon>RptAllPeliculas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Peliculas\WebFormRptPe\RptPeliculasDis.aspx.cs">
+      <DependentUpon>RptPeliculasDis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Peliculas\WebFormRptPe\RptPeliculasDis.aspx.designer.cs">
+      <DependentUpon>RptPeliculasDis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Peliculas\WebFormRptPe\RptPeliculasV.aspx.cs">
+      <DependentUpon>RptPeliculasV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Peliculas\WebFormRptPe\RptPeliculasV.aspx.designer.cs">
+      <DependentUpon>RptPeliculasV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Revistas\cRevista.aspx.cs">
+      <DependentUpon>cRevista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Revistas\cRevista.aspx.designer.cs">
+      <DependentUpon>cRevista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Revistas\GestionRevista_Bibliotecario.aspx.cs">
+      <DependentUpon>GestionRevista_Bibliotecario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Revistas\GestionRevista_Bibliotecario.aspx.designer.cs">
+      <DependentUpon>GestionRevista_Bibliotecario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Revistas\mRevista.aspx.cs">
+      <DependentUpon>mRevista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Revistas\mRevista.aspx.designer.cs">
+      <DependentUpon>mRevista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Revistas\WebFormRpt\RptLiRevistas.aspx.cs">
+      <DependentUpon>RptLiRevistas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Revistas\WebFormRpt\RptLiRevistas.aspx.designer.cs">
+      <DependentUpon>RptLiRevistas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Revistas\WebFormRpt\RptLiRevistasDis.aspx.cs">
+      <DependentUpon>RptLiRevistasDis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Revistas\WebFormRpt\RptLiRevistasDis.aspx.designer.cs">
+      <DependentUpon>RptLiRevistasDis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Revistas\WebFormRpt\RptRevistaV.aspx.cs">
+      <DependentUpon>RptRevistaV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Materiales\Revistas\WebFormRpt\RptRevistaV.aspx.designer.cs">
+      <DependentUpon>RptRevistaV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\mBibliotecario.aspx.cs">
+      <DependentUpon>mBibliotecario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\mBibliotecario.aspx.designer.cs">
+      <DependentUpon>mBibliotecario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\cPrestamoAudiobook.aspx.cs">
+      <DependentUpon>cPrestamoAudiobook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\cPrestamoAudiobook.aspx.designer.cs">
+      <DependentUpon>cPrestamoAudiobook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\cPrestamoLibro.aspx.cs">
+      <DependentUpon>cPrestamoLibro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\cPrestamoLibro.aspx.designer.cs">
+      <DependentUpon>cPrestamoLibro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\cPrestamoPelicula.aspx.cs">
+      <DependentUpon>cPrestamoPelicula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\cPrestamoPelicula.aspx.designer.cs">
+      <DependentUpon>cPrestamoPelicula.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\cPrestamoRevista.aspx.cs">
+      <DependentUpon>cPrestamoRevista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\cPrestamoRevista.aspx.designer.cs">
+      <DependentUpon>cPrestamoRevista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\GestionPrestamos_Bibliotecarios.aspx.cs">
+      <DependentUpon>GestionPrestamos_Bibliotecarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\GestionPrestamos_Bibliotecarios.aspx.designer.cs">
+      <DependentUpon>GestionPrestamos_Bibliotecarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\RptWebForm\RptHistorialPreMaterial.aspx.cs">
+      <DependentUpon>RptHistorialPreMaterial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\RptWebForm\RptHistorialPreMaterial.aspx.designer.cs">
+      <DependentUpon>RptHistorialPreMaterial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\RptWebForm\RptHistPresVi.aspx.cs">
+      <DependentUpon>RptHistPresVi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\RptWebForm\RptHistPresVi.aspx.designer.cs">
+      <DependentUpon>RptHistPresVi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\RptWebForm\RptPreRealizados.aspx.cs">
+      <DependentUpon>RptPreRealizados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\RptWebForm\RptPreRealizados.aspx.designer.cs">
+      <DependentUpon>RptPreRealizados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\RptWebForm\RptPreRecepcionados.aspx.cs">
+      <DependentUpon>RptPreRecepcionados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\RptWebForm\RptPreRecepcionados.aspx.designer.cs">
+      <DependentUpon>RptPreRecepcionados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\RptWebForm\RptPrestamo_Prorroga.aspx.cs">
+      <DependentUpon>RptPrestamo_Prorroga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\RptWebForm\RptPrestamo_Prorroga.aspx.designer.cs">
+      <DependentUpon>RptPrestamo_Prorroga.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Prestamos\Prorroga\Prorroga.aspx.cs">
+      <DependentUpon>Prorroga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Prestamos\Prorroga\Prorroga.aspx.designer.cs">
+      <DependentUpon>Prorroga.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Prestamos\Recepcion de Material\RecepcionMaterial.aspx.cs">
+      <DependentUpon>RecepcionMaterial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Prestamos\Recepcion de Material\RecepcionMaterial.aspx.designer.cs">
+      <DependentUpon>RecepcionMaterial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\RecuperarClaveBibliotecario.aspx.cs">
+      <DependentUpon>RecuperarClaveBibliotecario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\RecuperarClaveBibliotecario.aspx.designer.cs">
+      <DependentUpon>RecuperarClaveBibliotecario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Reservaciones\GestionReservaciones.aspx.cs">
+      <DependentUpon>GestionReservaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Reservaciones\GestionReservaciones.aspx.designer.cs">
+      <DependentUpon>GestionReservaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Reservaciones\Reservacion_Prestamo.aspx.cs">
+      <DependentUpon>Reservacion_Prestamo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Reservaciones\Reservacion_Prestamo.aspx.designer.cs">
+      <DependentUpon>Reservacion_Prestamo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Visitantes\cVisitante.aspx.cs">
+      <DependentUpon>cVisitante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Visitantes\cVisitante.aspx.designer.cs">
+      <DependentUpon>cVisitante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Visitantes\GestionVisitantes.aspx.cs">
+      <DependentUpon>GestionVisitantes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Visitantes\GestionVisitantes.aspx.designer.cs">
+      <DependentUpon>GestionVisitantes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Visitantes\mVisitante.aspx.cs">
+      <DependentUpon>mVisitante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Bibliotecario\Visitantes\mVisitante.aspx.designer.cs">
+      <DependentUpon>mVisitante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Visitante\DefaultVisitante.aspx.cs">
+      <DependentUpon>DefaultVisitante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Visitante\DefaultVisitante.aspx.designer.cs">
+      <DependentUpon>DefaultVisitante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Visitante\InicioSesionVisitante.aspx.cs">
+      <DependentUpon>InicioSesionVisitante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Visitante\InicioSesionVisitante.aspx.designer.cs">
+      <DependentUpon>InicioSesionVisitante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Visitante\Materiales\AudioBooks.aspx.cs">
+      <DependentUpon>AudioBooks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Visitante\Materiales\AudioBooks.aspx.designer.cs">
+      <DependentUpon>AudioBooks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Visitante\Reservaciones\GestionReservaciones.aspx.cs">
+      <DependentUpon>GestionReservaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Visitante\Reservaciones\GestionReservaciones.aspx.designer.cs">
+      <DependentUpon>GestionReservaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Visitante\Materiales\Libros.aspx.cs">
+      <DependentUpon>Libros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Visitante\Materiales\Libros.aspx.designer.cs">
+      <DependentUpon>Libros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Visitante\Materiales\Pelicula.aspx.cs">
+      <DependentUpon>Pelicula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Visitante\Materiales\Pelicula.aspx.designer.cs">
+      <DependentUpon>Pelicula.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Visitante\Prestamos\PrestamosEntregados.aspx.cs">
+      <DependentUpon>PrestamosEntregados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Visitante\Prestamos\PrestamosEntregados.aspx.designer.cs">
+      <DependentUpon>PrestamosEntregados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Visitante\Prestamos\PrestamosPendientes.aspx.cs">
+      <DependentUpon>PrestamosPendientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Visitante\Prestamos\PrestamosPendientes.aspx.designer.cs">
+      <DependentUpon>PrestamosPendientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Visitante\Reservaciones\ReservacionesPendienteVisitante.aspx.cs">
+      <DependentUpon>ReservacionesPendienteVisitante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Visitante\Reservaciones\ReservacionesPendienteVisitante.aspx.designer.cs">
+      <DependentUpon>ReservacionesPendienteVisitante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Visitante\Reservaciones\ReservacionMaterial.aspx.cs">
+      <DependentUpon>ReservacionMaterial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Visitante\Reservaciones\ReservacionMaterial.aspx.designer.cs">
+      <DependentUpon>ReservacionMaterial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Visitante\Materiales\Revista.aspx.cs">
+      <DependentUpon>Revista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Visitante\Materiales\Revista.aspx.designer.cs">
+      <DependentUpon>Revista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Visitante\RecuperarClaveVisitante.aspx.cs">
+      <DependentUpon>RecuperarClaveVisitante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Visitante\RecuperarClaveVisitante.aspx.designer.cs">
+      <DependentUpon>RecuperarClaveVisitante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Visitante\Visitante.Master.cs">
+      <DependentUpon>Visitante.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel Visitante\Visitante.Master.designer.cs">
+      <DependentUpon>Visitante.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.cs" />
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Panel Administracion\Reservaciones\Reportes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{d62d0f72-3836-4d9c-a1a1-85a6ed24d07c}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{2f750113-0c53-474c-9932-66f6e5ba29d8}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Panel Administracion\Materiales\Audiobooks\Reportes\RptABByAu_Cla.rdlc" />
+    <EmbeddedResource Include="Panel Administracion\Materiales\Audiobooks\Reportes\RptLiAu.rdlc" />
+    <EmbeddedResource Include="Panel Administracion\Materiales\Audiobooks\Reportes\RptLiAuDis.rdlc" />
+    <EmbeddedResource Include="Panel Administracion\Materiales\Libros\Reportes\RptLibrosxAutor.rdlc" />
+    <EmbeddedResource Include="Panel Administracion\Materiales\Libros\Reportes\RptLibroxClayAutor.rdlc" />
+    <EmbeddedResource Include="Panel Administracion\Materiales\Libros\Reportes\RptLiLibros.rdlc" />
+    <EmbeddedResource Include="Panel Administracion\Materiales\Libros\Reportes\RptLiLibrosDis.rdlc" />
+    <EmbeddedResource Include="Panel Administracion\Materiales\Libros\Reportes\RptLiLibroxClasificacion.rdlc" />
+    <EmbeddedResource Include="Panel Administracion\Materiales\Peliculas\Reportes\RptLiPeliculas.rdlc" />
+    <EmbeddedResource Include="Panel Administracion\Materiales\Peliculas\Reportes\RptLiPelxPro.rdlc" />
+    <EmbeddedResource Include="Panel Administracion\Materiales\Peliculas\Reportes\RptLiPexCla.rdlc" />
+    <EmbeddedResource Include="Panel Administracion\Materiales\Peliculas\Reportes\RptLiPexClayPro.rdlc" />
+    <EmbeddedResource Include="Panel Administracion\Materiales\Peliculas\Reportes\RptListAllPeliculas.rdlc" />
+    <EmbeddedResource Include="Panel Administracion\Materiales\Revistas\Reportes\RptLiRevista.rdlc" />
+    <EmbeddedResource Include="Panel Administracion\Materiales\Revistas\Reportes\RptLiRevistaxAu.rdlc" />
+    <EmbeddedResource Include="Panel Administracion\Materiales\Revistas\Reportes\RptRevistaxAuyCla.rdlc" />
+    <EmbeddedResource Include="Panel Administracion\Materiales\Revistas\Reportes\RptRevistaxCla.rdlc" />
+    <EmbeddedResource Include="Panel Administracion\Materiales\Revistas\Reportes\RrptLiRevistaDis.rdlc" />
+    <EmbeddedResource Include="Panel Administracion\Prestamos\Domicilio y Sala\RptPrestamos\RptHisPreVisitante.rdlc" />
+    <EmbeddedResource Include="Panel Administracion\Prestamos\Domicilio y Sala\RptPrestamos\RptHistPreMaterial.rdlc" />
+    <EmbeddedResource Include="Panel Administracion\Prestamos\Domicilio y Sala\RptPrestamos\RptMaterialRecepcionado.rdlc" />
+    <EmbeddedResource Include="Panel Administracion\Prestamos\Domicilio y Sala\RptPrestamos\RptPrestamoxRangoFecha.rdlc" />
+    <EmbeddedResource Include="Panel Administracion\Prestamos\Domicilio y Sala\RptPrestamos\RptPrestamo_Prorroga.rdlc" />
+    <EmbeddedResource Include="Panel Bibliotecario\Materiales\AudioBooks\Reportes\RptABByAu_Cla.rdlc" />
+    <EmbeddedResource Include="Panel Bibliotecario\Materiales\AudioBooks\Reportes\RptLiAu.rdlc" />
+    <EmbeddedResource Include="Panel Bibliotecario\Materiales\AudioBooks\Reportes\RptLiAuDis.rdlc" />
+    <EmbeddedResource Include="Panel Bibliotecario\Materiales\Libros\Reportes\RptLibrosxAutor.rdlc" />
+    <EmbeddedResource Include="Panel Bibliotecario\Materiales\Libros\Reportes\RptLibroxClayAutor.rdlc" />
+    <EmbeddedResource Include="Panel Bibliotecario\Materiales\Libros\Reportes\RptLiLibros.rdlc" />
+    <EmbeddedResource Include="Panel Bibliotecario\Materiales\Libros\Reportes\RptLiLibrosDis.rdlc" />
+    <EmbeddedResource Include="Panel Bibliotecario\Materiales\Libros\Reportes\RptLiLibroxClasificacion.rdlc" />
+    <EmbeddedResource Include="Panel Bibliotecario\Materiales\Peliculas\Reportes\RptLiPeliculas.rdlc" />
+    <EmbeddedResource Include="Panel Bibliotecario\Materiales\Peliculas\Reportes\RptLiPelxPro.rdlc" />
+    <EmbeddedResource Include="Panel Bibliotecario\Materiales\Peliculas\Reportes\RptLiPexCla.rdlc" />
+    <EmbeddedResource Include="Panel Bibliotecario\Materiales\Peliculas\Reportes\RptLiPexClayPro.rdlc" />
+    <EmbeddedResource Include="Panel Bibliotecario\Materiales\Peliculas\Reportes\RptListAllPeliculas.rdlc" />
+    <EmbeddedResource Include="Panel Bibliotecario\Materiales\Revistas\Reportes\RptLiRevista.rdlc" />
+    <EmbeddedResource Include="Panel Bibliotecario\Materiales\Revistas\Reportes\RptLiRevistaxAu.rdlc" />
+    <EmbeddedResource Include="Panel Bibliotecario\Materiales\Revistas\Reportes\RptRevistaxAuyCla.rdlc" />
+    <EmbeddedResource Include="Panel Bibliotecario\Materiales\Revistas\Reportes\RptRevistaxCla.rdlc" />
+    <EmbeddedResource Include="Panel Bibliotecario\Materiales\Revistas\Reportes\RrptLiRevistaDis.rdlc" />
+    <EmbeddedResource Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\RptPrestamos\RptHisPreVisitante.rdlc" />
+    <EmbeddedResource Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\RptPrestamos\RptHistPreMaterial.rdlc" />
+    <EmbeddedResource Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\RptPrestamos\RptMaterialRecepcionado.rdlc" />
+    <EmbeddedResource Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\RptPrestamos\RptPrestamoxRangoFecha.rdlc" />
+    <EmbeddedResource Include="Panel Bibliotecario\Prestamos\Domicilio y Sala\RptPrestamos\RptPrestamo_Prorroga.rdlc" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3207</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3207/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

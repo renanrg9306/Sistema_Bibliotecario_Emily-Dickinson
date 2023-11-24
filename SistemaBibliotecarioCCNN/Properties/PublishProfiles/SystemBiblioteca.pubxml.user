@@ -1,0 +1,1202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo es utilizado por el proceso de paquete/publicación de nuestro proyecto Web. Puede personalizar el comportamiento de este proceso
+editando este archivo MSBuild. Para conocer más acerca de esto, visite http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAd0aIhZADW06bmIHtmRGsLwAAAAACAAAAAAAQZgAAAAEAACAAAABtgjpZsp5tpiVKtJbtE5ce3OuEUNyJLzrgcOfStvEH/AAAAAAOgAAAAAIAACAAAAC/64cYwJWmhgWmZzLHR+gdNb+XVtN0quWEsShyeav03iAAAAC2HayySnmxnKjs/GSxebLmAOI+uiXGtLMg7pgZKc27VEAAAAAJdUdXbN27QQidJWYmZRFaNxBvcPNg68giij8FEOSfFeM67BkPev+GImSldbU/4D3SDmrF96AaCy2NQRRETcjn</EncryptedPassword>
+    <_PublishTargetUrl>ftp://ftp.site4now.net/SystemBiblioteca</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="About.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Account/Login.aspx">
+      <publishTime>06/09/2018 20:02:38</publishTime>
+    </File>
+    <File Include="Account/Manage.aspx">
+      <publishTime>06/09/2018 20:02:38</publishTime>
+    </File>
+    <File Include="Account/OpenAuthProviders.ascx">
+      <publishTime>06/09/2018 20:02:38</publishTime>
+    </File>
+    <File Include="Account/Register.aspx">
+      <publishTime>06/09/2018 20:02:38</publishTime>
+    </File>
+    <File Include="Account/RegisterExternalLogin.aspx">
+      <publishTime>06/09/2018 20:02:38</publishTime>
+    </File>
+    <File Include="Account/Web.config">
+      <publishTime>06/09/2018 20:02:38</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>06/09/2018 20:02:35</publishTime>
+    </File>
+    <File Include="bin/AspNet.ScriptManager.bootstrap.dll">
+      <publishTime>06/09/2018 20:02:36</publishTime>
+    </File>
+    <File Include="bin/AspNet.ScriptManager.jQuery.dll">
+      <publishTime>06/09/2018 20:02:36</publishTime>
+    </File>
+    <File Include="bin/BLL.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/DAL.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/Entity.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>06/09/2018 20:02:38</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>06/09/2018 20:02:38</publishTime>
+    </File>
+    <File Include="bin/es/EntityFramework.resources.dll">
+      <publishTime>06/09/2018 20:02:40</publishTime>
+    </File>
+    <File Include="bin/es/EntityFramework.SqlServer.resources.dll">
+      <publishTime>06/09/2018 20:02:40</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.AspNet.FriendlyUrls.resources.dll">
+      <publishTime>06/09/2018 20:02:37</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.AspNet.Identity.Core.resources.dll">
+      <publishTime>06/09/2018 20:02:41</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.AspNet.Identity.EntityFramework.resources.dll">
+      <publishTime>06/09/2018 20:02:41</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.AspNet.Identity.Owin.resources.dll">
+      <publishTime>06/09/2018 20:02:41</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Owin.Host.SystemWeb.resources.dll">
+      <publishTime>06/09/2018 20:02:41</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Owin.resources.dll">
+      <publishTime>06/09/2018 20:02:41</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Owin.Security.Facebook.resources.dll">
+      <publishTime>06/09/2018 20:02:41</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Owin.Security.Google.resources.dll">
+      <publishTime>06/09/2018 20:02:41</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Owin.Security.MicrosoftAccount.resources.dll">
+      <publishTime>06/09/2018 20:02:41</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Owin.Security.resources.dll">
+      <publishTime>06/09/2018 20:02:41</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Owin.Security.Twitter.resources.dll">
+      <publishTime>06/09/2018 20:02:41</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Optimization.resources.dll">
+      <publishTime>06/09/2018 20:02:38</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Providers.resources.dll">
+      <publishTime>06/09/2018 20:02:41</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.FriendlyUrls.dll">
+      <publishTime>06/09/2018 20:02:37</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>06/09/2018 20:02:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>06/09/2018 20:02:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>06/09/2018 20:02:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Web.Optimization.WebForms.dll">
+      <publishTime>06/09/2018 20:02:37</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>06/09/2018 20:02:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>06/09/2018 20:02:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>06/09/2018 20:02:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>06/09/2018 20:02:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>06/09/2018 20:02:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Google.dll">
+      <publishTime>06/09/2018 20:02:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.dll">
+      <publishTime>06/09/2018 20:02:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>06/09/2018 20:02:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
+      <publishTime>06/09/2018 20:02:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ScriptManager.MSAjax.dll">
+      <publishTime>06/09/2018 20:02:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ScriptManager.WebForms.dll">
+      <publishTime>06/09/2018 20:02:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>06/09/2018 20:02:37</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/09/2018 20:02:35</publishTime>
+    </File>
+    <File Include="bin/OtherFunction.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>06/09/2018 20:02:40</publishTime>
+    </File>
+    <File Include="bin/SistemaBibliotecarioCCNN.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>06/09/2018 20:02:35</publishTime>
+    </File>
+    <File Include="bin/System.Web.Providers.dll">
+      <publishTime>06/09/2018 20:02:40</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>06/09/2018 20:02:35</publishTime>
+    </File>
+    <File Include="Bundle.config">
+      <publishTime>06/09/2018 20:02:29</publishTime>
+    </File>
+    <File Include="Contact.aspx">
+      <publishTime>06/09/2018 20:02:29</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>06/09/2018 20:02:35</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>06/09/2018 20:02:35</publishTime>
+    </File>
+    <File Include="Content/fontawesome-all.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontawesome-all.min.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/css/font-awesome.css">
+      <publishTime>02/01/2019 15:11:17</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/css/font-awesome.min.css">
+      <publishTime>02/01/2019 15:11:17</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/fonts/fontawesome-webfont.eot">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/fonts/fontawesome-webfont.svg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/fonts/fontawesome-webfont.ttf">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/fonts/fontawesome-webfont.woff">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/fonts/fontawesome-webfont.woff2">
+      <publishTime>12/03/2018 13:11:27</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/fonts/FontAwesome.otf">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/less/animated.less">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/less/bordered-pulled.less">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/less/core.less">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/less/fixed-width.less">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/less/font-awesome.less">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/less/icons.less">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/less/larger.less">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/less/list.less">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/less/mixins.less">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/less/path.less">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/less/rotated-flipped.less">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/less/screen-reader.less">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/less/stacked.less">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/less/variables.less">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/scss/font-awesome.scss">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/scss/_animated.scss">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/scss/_bordered-pulled.scss">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/scss/_core.scss">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/scss/_fixed-width.scss">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/scss/_icons.scss">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/scss/_larger.scss">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/scss/_list.scss">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/scss/_mixins.scss">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/scss/_path.scss">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/scss/_rotated-flipped.scss">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/scss/_screen-reader.scss">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/scss/_stacked.scss">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fontAwesome/scss/_variables.scss">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/images/animated-overlay.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/images/ui-bg_highlight-soft_25_0073ea_1x100.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/images/ui-bg_highlight-soft_50_dddddd_1x100.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/images/ui-icons_0073ea_256x240.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/images/ui-icons_444444_256x240.png">
+      <publishTime>12/03/2018 12:03:06</publishTime>
+    </File>
+    <File Include="Content/images/ui-icons_454545_256x240.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/images/ui-icons_555555_256x240.png">
+      <publishTime>12/03/2018 12:03:06</publishTime>
+    </File>
+    <File Include="Content/images/ui-icons_666666_256x240.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/images/ui-icons_ff0084_256x240.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/images/ui-icons_ffffff_256x240.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/jquery-ui-1.10.4.custom.min.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/jquery-ui.min.css">
+      <publishTime>12/03/2018 11:27:02</publishTime>
+    </File>
+    <File Include="Content/jquery.dataTables.min.css">
+      <publishTime>03/01/2017 00:32:07</publishTime>
+    </File>
+    <File Include="Content/MisEstilos.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/OtrasEdiciones.css">
+      <publishTime>08/02/2019 16:10:20</publishTime>
+    </File>
+    <File Include="Content/select2.css">
+      <publishTime>05/11/2018 11:05:58</publishTime>
+    </File>
+    <File Include="Content/select2.min.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>06/09/2018 20:02:38</publishTime>
+    </File>
+    <File Include="Content/sweetalert2.min.css">
+      <publishTime>10/12/2018 17:05:39</publishTime>
+    </File>
+    <File Include="Content/Validaciones.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="DataReports.xsc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="DataReports.xss">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>12/03/2019 21:56:41</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>06/09/2018 20:02:29</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>06/09/2018 20:02:35</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>06/09/2018 20:02:35</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>06/09/2018 20:02:35</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>06/09/2018 20:02:35</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>06/09/2018 20:02:29</publishTime>
+    </File>
+    <File Include="Img/Biblioteca-icono.png">
+      <publishTime>08/06/2017 18:37:32</publishTime>
+    </File>
+    <File Include="Img/Foto1CCNN.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Img/Foto2CCNN.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Img/Foto3CCNN.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Img/Foto4CCNN.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Img/IconEditar.png">
+      <publishTime>11/09/2018 15:43:30</publishTime>
+    </File>
+    <File Include="Img/IconEliminar.jpg">
+      <publishTime>11/09/2018 15:46:19</publishTime>
+    </File>
+    <File Include="Img/IconNuevo.png">
+      <publishTime>11/09/2018 15:56:28</publishTime>
+    </File>
+    <File Include="Img/IMG-20180831-WA0010.jpg">
+      <publishTime>05/09/2018 12:39:50</publishTime>
+    </File>
+    <File Include="Img/IMG10.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Img/IMG12.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Img/IMG5.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Img/IMG6.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Img/IMG7.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Img/IMG8.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Img/IMG9.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Img/logo-ccnn.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Img/Logo-footer-ccnn-2019.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Img/Trusted-User %281%29.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Img/Visitantes.jpg">
+      <publishTime>03/01/2019 00:00:51</publishTime>
+    </File>
+    <File Include="Otros/jquery-ui-1.10.4.custom.min.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Otros/jquery.dataTables.min.js">
+      <publishTime>03/01/2017 00:32:40</publishTime>
+    </File>
+    <File Include="Otros/MisJS.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Otros/select2.min.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>06/09/2018 20:02:41</publishTime>
+    </File>
+    <File Include="Panel Administracion/About.aspx">
+      <publishTime>06/06/2019 16:42:56</publishTime>
+    </File>
+    <File Include="Panel Administracion/Administracion.Master">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Administrador/cAdim.aspx">
+      <publishTime>06/06/2019 18:53:25</publishTime>
+    </File>
+    <File Include="Panel Administracion/Administrador/cAdim.aspx.cs">
+      <publishTime>03/04/2019 22:01:05</publishTime>
+    </File>
+    <File Include="Panel Administracion/Administrador/DefaultAdmins.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Administrador/GestionAdmins.aspx">
+      <publishTime>06/06/2019 16:46:16</publishTime>
+    </File>
+    <File Include="Panel Administracion/Administrador/mAdmin.aspx">
+      <publishTime>06/06/2019 18:54:08</publishTime>
+    </File>
+    <File Include="Panel Administracion/Anio/cAnio.aspx">
+      <publishTime>12/10/2018 22:24:19</publishTime>
+    </File>
+    <File Include="Panel Administracion/Anio/cEdicion.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Autor Materiales/cAutorMateriales.aspx">
+      <publishTime>12/03/2018 12:13:57</publishTime>
+    </File>
+    <File Include="Panel Administracion/Autor Materiales/GestionAutores.aspx">
+      <publishTime>12/03/2018 12:13:57</publishTime>
+    </File>
+    <File Include="Panel Administracion/Autor Materiales/mAutor.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Bibliotecario/cBibliotecario.aspx">
+      <publishTime>06/06/2019 19:10:12</publishTime>
+    </File>
+    <File Include="Panel Administracion/Bibliotecario/GestionBibliotecario.aspx">
+      <publishTime>06/06/2019 16:47:05</publishTime>
+    </File>
+    <File Include="Panel Administracion/Bibliotecario/mBibliotecario.aspx">
+      <publishTime>06/06/2019 19:18:05</publishTime>
+    </File>
+    <File Include="Panel Administracion/Clasificacion/cClasificacion.aspx">
+      <publishTime>12/03/2018 12:13:56</publishTime>
+    </File>
+    <File Include="Panel Administracion/Clasificacion/GestionClasificacion.aspx">
+      <publishTime>12/03/2018 12:13:56</publishTime>
+    </File>
+    <File Include="Panel Administracion/Clasificacion/mClasificacion.aspx">
+      <publishTime>12/10/2018 09:05:03</publishTime>
+    </File>
+    <File Include="Panel Administracion/InicioSesionAdmin.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Audiobooks/cAudiobook.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Audiobooks/GestionAudioBooks.aspx">
+      <publishTime>06/06/2019 16:56:11</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Audiobooks/mAudiobooks.aspx">
+      <publishTime>06/06/2019 20:00:23</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Audiobooks/Reportes/RptABByAu_Cla.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Audiobooks/Reportes/RptLiAu.rdlc">
+      <publishTime>02/09/2019 17:12:14</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Audiobooks/Reportes/RptLiAuDis.rdlc">
+      <publishTime>02/09/2019 19:00:09</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Audiobooks/WebFormRpt/RptABxAu_Cla_Both.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Audiobooks/WebFormRpt/RptLAu.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Audiobooks/WebFormRpt/RptListarAuDis.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Libros/cLibros.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Libros/GestionLibros.aspx">
+      <publishTime>06/06/2019 17:03:41</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Libros/mLibro.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Libros/Reportes/RptLibrosxAutor.rdlc">
+      <publishTime>02/12/2019 17:03:18</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Libros/Reportes/RptLibroxClayAutor.rdlc">
+      <publishTime>02/12/2019 21:07:17</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Libros/Reportes/RptLiLibros.rdlc">
+      <publishTime>02/12/2019 14:54:30</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Libros/Reportes/RptLiLibrosDis.rdlc">
+      <publishTime>02/12/2019 13:20:25</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Libros/Reportes/RptLiLibroxClasificacion.rdlc">
+      <publishTime>02/12/2019 19:23:25</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Libros/WebFormRpt/ReportesLibrosV.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Libros/WebFormRpt/RptLibrosDisponibles.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Libros/WebFormRpt/RptListarLibros.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Peliculas/cPelicula.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Peliculas/GestionPeliculas.aspx">
+      <publishTime>06/06/2019 17:05:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Peliculas/mPelicula.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Peliculas/Reportes/RptLiPeliculas.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Peliculas/Reportes/RptLiPelxPro.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Peliculas/Reportes/RptLiPexCla.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Peliculas/Reportes/RptLiPexClayPro.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Peliculas/Reportes/RptListAllPeliculas.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Peliculas/WebFormRpt/ReportePeliculasV.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Peliculas/WebFormRpt/RptListarPeliculas.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Peliculas/WebFormRpt/RptListPeliculas.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Revistas/cRevista.aspx">
+      <publishTime>08/02/2019 18:55:31</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Revistas/GestionRevista.aspx">
+      <publishTime>06/06/2019 17:13:22</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Revistas/mRevista.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Revistas/Reportes/RptLiRevista.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Revistas/Reportes/RptLiRevistaxAu.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Revistas/Reportes/RptRevistaxAuyCla.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Revistas/Reportes/RptRevistaxCla.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Revistas/Reportes/RrptLiRevistaDis.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Revistas/WebFormRpt/ReporteRevistaV.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Revistas/WebFormRpt/RptLiRevistaDis.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Materiales/Revistas/WebFormRpt/RptListarRevistas.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Nivel Academico/cNivelAcademico.aspx">
+      <publishTime>12/03/2018 12:13:55</publishTime>
+    </File>
+    <File Include="Panel Administracion/Nivel Academico/mNivelAcademico.aspx">
+      <publishTime>12/03/2018 12:13:55</publishTime>
+    </File>
+    <File Include="Panel Administracion/Prestamos/Domicilio y Sala/cPrestamoAudioBook.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Prestamos/Domicilio y Sala/cPrestamoLibro.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Prestamos/Domicilio y Sala/cPrestamoPelicula.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Prestamos/Domicilio y Sala/cPrestamoRevista.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Prestamos/Domicilio y Sala/GestionPrestamos.aspx">
+      <publishTime>06/06/2019 17:13:51</publishTime>
+    </File>
+    <File Include="Panel Administracion/Prestamos/Domicilio y Sala/RptPrestamos/RptHisPreVisitante.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Prestamos/Domicilio y Sala/RptPrestamos/RptHistPreMaterial.rdlc">
+      <publishTime>06/10/2019 22:18:51</publishTime>
+    </File>
+    <File Include="Panel Administracion/Prestamos/Domicilio y Sala/RptPrestamos/RptMaterialRecepcionado.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Prestamos/Domicilio y Sala/RptPrestamos/RptPrestamoxRangoFecha.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Prestamos/Domicilio y Sala/RptPrestamos/RptPrestamo_Prorroga.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Prestamos/Domicilio y Sala/WebFormRpt/RptHistorialPrestamoVisitante.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Prestamos/Domicilio y Sala/WebFormRpt/RptLiPrestamosRealizados.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Prestamos/Domicilio y Sala/WebFormRpt/RptListarHistorialMaterial.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Prestamos/Domicilio y Sala/WebFormRpt/RptListarPrestamosRecepcionados.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Prestamos/Domicilio y Sala/WebFormRpt/RptPreProrroga.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Prestamos/Domicilio/cPrestamoAudioBook.aspx">
+      <publishTime>12/11/2018 14:33:03</publishTime>
+    </File>
+    <File Include="Panel Administracion/Prestamos/Domicilio/cPrestamoLibro.aspx">
+      <publishTime>10/11/2018 13:28:49</publishTime>
+    </File>
+    <File Include="Panel Administracion/Prestamos/Domicilio/cPrestamoPelicula.aspx">
+      <publishTime>12/11/2018 14:54:46</publishTime>
+    </File>
+    <File Include="Panel Administracion/Prestamos/Domicilio/cPrestamoRevista.aspx">
+      <publishTime>12/11/2018 14:58:54</publishTime>
+    </File>
+    <File Include="Panel Administracion/Prestamos/Domicilio/GestionPrestamos.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Prestamos/Prorroga/Prorroga.aspx">
+      <publishTime>09/04/2019 13:37:34</publishTime>
+    </File>
+    <File Include="Panel Administracion/Prestamos/RecepcionMaterial/RecepcionMaterial.aspx">
+      <publishTime>02/01/2019 16:20:39</publishTime>
+    </File>
+    <File Include="Panel Administracion/RecuperarClaveAdmin.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Registro Entrada/cRegistroEntrada.aspx">
+      <publishTime>12/10/2018 11:54:26</publishTime>
+    </File>
+    <File Include="Panel Administracion/Registro Entrada/GestionRegistroEntrada.aspx">
+      <publishTime>12/03/2018 12:13:55</publishTime>
+    </File>
+    <File Include="Panel Administracion/Registro Entrada/mRegEntrada.aspx">
+      <publishTime>12/10/2018 13:37:15</publishTime>
+    </File>
+    <File Include="Panel Administracion/Reservaciones/GestionReservaciones.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Reservaciones/Reservacion_Prestamo.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Administracion/Visitantes/cVisitante.aspx">
+      <publishTime>06/06/2019 19:22:46</publishTime>
+    </File>
+    <File Include="Panel Administracion/Visitantes/GestionVisitante.aspx">
+      <publishTime>06/06/2019 16:54:04</publishTime>
+    </File>
+    <File Include="Panel Administracion/Visitantes/mVisitante.aspx">
+      <publishTime>06/06/2019 19:30:51</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/About.aspx">
+      <publishTime>06/06/2019 16:41:43</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Bibliotecario.Master">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/DefaultBibliotecario.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/InicioSesionBibliotecario.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/AudioBooks/cAudiobook.aspx">
+      <publishTime>06/06/2019 21:42:35</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/AudioBooks/GestionAudioBooks_Bibliotecario.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/AudioBooks/mAudioBook.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/AudioBooks/Reportes/RptABByAu_Cla.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/AudioBooks/Reportes/RptLiAu.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/AudioBooks/Reportes/RptLiAuDis.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/AudioBooks/WebFormRpt/RptLiABByCla_Autor_Both.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/AudioBooks/WebFormRpt/RptLiABDis.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/AudioBooks/WebFormRpt/RptLiAllAB.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Libros/cLibro.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Libros/GestionLibros_Bibliotecario.aspx">
+      <publishTime>04/03/2019 23:05:21</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Libros/mLibro.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Libros/Reportes/RptLibrosxAutor.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Libros/Reportes/RptLibroxClayAutor.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Libros/Reportes/RptLiLibros.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Libros/Reportes/RptLiLibrosDis.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Libros/Reportes/RptLiLibroxClasificacion.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Libros/WebFormRpt/RptLiAllLibros.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Libros/WebFormRpt/RptLibroV.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Libros/WebFormRpt/RptLiLibrosDis.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Peliculas/cPeliculas.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Peliculas/GestionPeliculas_Bibliotecario.aspx">
+      <publishTime>04/03/2019 23:06:03</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Peliculas/mPelicula.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Peliculas/Reportes/RptLiPeliculas.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Peliculas/Reportes/RptLiPelxPro.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Peliculas/Reportes/RptLiPexCla.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Peliculas/Reportes/RptLiPexClayPro.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Peliculas/Reportes/RptListAllPeliculas.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Peliculas/WebFormRptPe/RptAllPeliculas.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Peliculas/WebFormRptPe/RptPeliculasDis.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Peliculas/WebFormRptPe/RptPeliculasV.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Revistas/cRevista.aspx">
+      <publishTime>08/02/2019 22:18:09</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Revistas/GestionRevista_Bibliotecario.aspx">
+      <publishTime>04/03/2019 23:06:17</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Revistas/mRevista.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Revistas/Reportes/RptLiRevista.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Revistas/Reportes/RptLiRevistaxAu.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Revistas/Reportes/RptRevistaxAuyCla.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Revistas/Reportes/RptRevistaxCla.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Revistas/Reportes/RrptLiRevistaDis.rdlc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Revistas/WebFormRpt/RptLiRevistas.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Revistas/WebFormRpt/RptLiRevistasDis.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Materiales/Revistas/WebFormRpt/RptRevistaV.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/mBibliotecario.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Prestamos/Domicilio y Sala/cPrestamoAudiobook.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Prestamos/Domicilio y Sala/cPrestamoLibro.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Prestamos/Domicilio y Sala/cPrestamoPelicula.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Prestamos/Domicilio y Sala/cPrestamoRevista.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Prestamos/Domicilio y Sala/GestionPrestamos_Bibliotecarios.aspx">
+      <publishTime>06/06/2019 17:17:41</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Prestamos/Domicilio y Sala/RptPrestamo/RptHistorialPreMaterial.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Prestamos/Domicilio y Sala/RptPrestamo/RptHistPresVi.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Prestamos/Domicilio y Sala/RptPrestamo/RptPreRealizados.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Prestamos/Domicilio y Sala/RptPrestamo/RptPreRecepcionados.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Prestamos/Domicilio y Sala/RptPrestamo/RptPrestamo_Prorroga.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Prestamos/Domicilio y Sala/RptPrestamos/RptHisPreVisitante.rdlc">
+      <publishTime>03/01/2019 09:58:07</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Prestamos/Domicilio y Sala/RptPrestamos/RptHistPreMaterial.rdlc">
+      <publishTime>03/01/2019 09:58:07</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Prestamos/Domicilio y Sala/RptPrestamos/RptMaterialRecepcionado.rdlc">
+      <publishTime>03/01/2019 09:58:07</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Prestamos/Domicilio y Sala/RptPrestamos/RptPrestamoxRangoFecha.rdlc">
+      <publishTime>03/01/2019 09:58:07</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Prestamos/Domicilio y Sala/RptPrestamos/RptPrestamo_Prorroga.rdlc">
+      <publishTime>03/01/2019 09:58:07</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Prestamos/Domicilio y Sala/RptWebForm/RptHistorialPreMaterial.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Prestamos/Domicilio y Sala/RptWebForm/RptHistPresVi.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Prestamos/Domicilio y Sala/RptWebForm/RptPreRealizados.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Prestamos/Domicilio y Sala/RptWebForm/RptPreRecepcionados.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Prestamos/Domicilio y Sala/RptWebForm/RptPrestamo_Prorroga.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Prestamos/Prorroga/Prorroga.aspx">
+      <publishTime>09/04/2019 13:38:44</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Prestamos/Recepcion de Material/RecepcionMaterial.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/RecuperarClaveBibliotecario.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Reservaciones/GestionReservaciones.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Reservaciones/Reservacion_Prestamo.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Visitantes/cVisitante.aspx">
+      <publishTime>06/06/2019 22:30:53</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Visitantes/GestionVisitantes.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Bibliotecario/Visitantes/mVisitante.aspx">
+      <publishTime>06/06/2019 18:57:46</publishTime>
+    </File>
+    <File Include="Panel Visitante/About.aspx">
+      <publishTime>06/06/2019 16:44:34</publishTime>
+    </File>
+    <File Include="Panel Visitante/DefaultVisitante.aspx">
+      <publishTime>03/01/2019 00:01:02</publishTime>
+    </File>
+    <File Include="Panel Visitante/InicioSesionVisitante.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Visitante/Materiales/AudioBooks.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Visitante/Materiales/GestionReservaciones.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Visitante/Materiales/Libros.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Visitante/Materiales/Pelicula.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Visitante/Materiales/PrestamosEntregados.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Visitante/Materiales/PrestamosPendientes.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Visitante/Materiales/ReservacionesPendienteVisitante.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Visitante/Materiales/ReservacionMaterial.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Visitante/Materiales/Revista.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Visitante/Prestamos/PrestamosEntregados.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Visitante/Prestamos/PrestamosPendientes.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Visitante/RecuperarClaveVisitante.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Visitante/Reservaciones/GestionReservaciones.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Visitante/Reservaciones/ReservacionesPendienteVisitante.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Visitante/Reservaciones/ReservacionMaterial.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Panel Visitante/Visitante.Master">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>06/09/2018 20:02:35</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>06/09/2018 20:02:35</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>06/09/2018 20:02:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>06/09/2018 20:02:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>06/09/2018 20:02:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui.min.js">
+      <publishTime>12/02/2018 21:45:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery.js">
+      <publishTime>12/02/2018 21:45:17</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>06/09/2018 20:02:34</publishTime>
+    </File>
+    <File Include="Scripts/MyJavaScript.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>06/09/2018 20:02:34</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>06/09/2018 20:02:34</publishTime>
+    </File>
+    <File Include="Scripts/select2.js">
+      <publishTime>04/01/2019 15:46:56</publishTime>
+    </File>
+    <File Include="Scripts/select2.min.js">
+      <publishTime>05/11/2018 11:06:16</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert2.min.js">
+      <publishTime>10/12/2018 18:48:06</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/DetailsView.js">
+      <publishTime>09/06/2018 20:02:36</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/Focus.js">
+      <publishTime>09/06/2018 20:02:36</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/GridView.js">
+      <publishTime>09/06/2018 20:02:36</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/jquery-datepicker.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/Menu.js">
+      <publishTime>09/06/2018 20:02:36</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MenuStandards.js">
+      <publishTime>09/06/2018 20:02:36</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjax.js">
+      <publishTime>09/06/2018 20:02:36</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxApplicationServices.js">
+      <publishTime>09/06/2018 20:02:36</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxComponentModel.js">
+      <publishTime>09/06/2018 20:02:36</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxCore.js">
+      <publishTime>09/06/2018 20:02:36</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxGlobalization.js">
+      <publishTime>09/06/2018 20:02:36</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxHistory.js">
+      <publishTime>09/06/2018 20:02:36</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxNetwork.js">
+      <publishTime>09/06/2018 20:02:36</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxSerialization.js">
+      <publishTime>09/06/2018 20:02:36</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxTimer.js">
+      <publishTime>09/06/2018 20:02:36</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxWebForms.js">
+      <publishTime>09/06/2018 20:02:36</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxWebServices.js">
+      <publishTime>09/06/2018 20:02:36</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/SmartNav.js">
+      <publishTime>09/06/2018 20:02:36</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/TreeView.js">
+      <publishTime>09/06/2018 20:02:36</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebForms.js">
+      <publishTime>09/06/2018 20:02:36</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebParts.js">
+      <publishTime>09/06/2018 20:02:36</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebUIValidation.js">
+      <publishTime>09/06/2018 20:02:36</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>04/01/2019 18:16:37</publishTime>
+    </File>
+    <File Include="Site.Master">
+      <publishTime>06/06/2019 16:23:30</publishTime>
+    </File>
+    <File Include="Site.Mobile.Master">
+      <publishTime>06/09/2018 20:02:37</publishTime>
+    </File>
+    <File Include="ViewSwitcher.ascx">
+      <publishTime>06/09/2018 20:02:37</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="webfonts/fa-brands-400.eot">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="webfonts/fa-brands-400.svg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="webfonts/fa-brands-400.ttf">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="webfonts/fa-brands-400.woff">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="webfonts/fa-brands-400.woff2">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="webfonts/fa-regular-400.eot">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="webfonts/fa-regular-400.svg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="webfonts/fa-regular-400.ttf">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="webfonts/fa-regular-400.woff">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="webfonts/fa-regular-400.woff2">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="webfonts/fa-solid-900.eot">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="webfonts/fa-solid-900.svg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="webfonts/fa-solid-900.ttf">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="webfonts/fa-solid-900.woff">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="webfonts/fa-solid-900.woff2">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

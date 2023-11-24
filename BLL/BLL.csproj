@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D62D0F72-3836-4D9C-A1A1-85A6ED24D07C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BLL</RootNamespace>
+    <AssemblyName>BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdministradorBLL.cs" />
+    <Compile Include="AnioBLL.cs" />
+    <Compile Include="AudiobookBLL.cs" />
+    <Compile Include="AutorBLL.cs" />
+    <Compile Include="BibliotecarioBLL.cs" />
+    <Compile Include="ClasificacionBLL.cs" />
+    <Compile Include="DirectorBLL.cs" />
+    <Compile Include="EdicionBLL.cs" />
+    <Compile Include="EditorialBLL.cs" />
+    <Compile Include="EnvioCorreoBLL.cs" />
+    <Compile Include="GeneroBLL.cs" />
+    <Compile Include="LibroBLL.cs" />
+    <Compile Include="MaterialBLL.cs" />
+    <Compile Include="NivelAcademicoBLL.cs" />
+    <Compile Include="OcupacionBLL.cs" />
+    <Compile Include="PeliculaBLL.cs" />
+    <Compile Include="PrestamoBLL.cs" />
+    <Compile Include="ProgramBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProrrogaBLL.cs" />
+    <Compile Include="ProtagonistaBLL.cs" />
+    <Compile Include="RegEntradaBLL.cs" />
+    <Compile Include="ReservacionBLL.cs" />
+    <Compile Include="RevistaBLL.cs" />
+    <Compile Include="TipoPrestamoBLL.cs" />
+    <Compile Include="VisitanteBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{94dff5f0-2b67-4d0b-97bd-4d37892fdbd4}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{2f750113-0c53-474c-9932-66f6e5ba29d8}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

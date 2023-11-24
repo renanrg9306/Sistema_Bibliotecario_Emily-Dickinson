@@ -1,0 +1,27 @@
+C:\Users\Renán Rosales\Documents\Visual Studio 2013\Projects\SistemaBibliotecarioCCNN\Entity\bin\Debug\Entity.dll
+C:\Users\Renán Rosales\Documents\Visual Studio 2013\Projects\SistemaBibliotecarioCCNN\Entity\bin\Debug\Entity.pdb
+C:\Users\Renán Rosales\Documents\Visual Studio 2013\Projects\SistemaBibliotecarioCCNN\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+C:\Users\Renán Rosales\Documents\Visual Studio 2013\Projects\SistemaBibliotecarioCCNN\Entity\obj\Debug\Entity.dll
+C:\Users\Renán Rosales\Documents\Visual Studio 2013\Projects\SistemaBibliotecarioCCNN\Entity\obj\Debug\Entity.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN\Entity\bin\Debug\Entity.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN\Entity\bin\Debug\Entity.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN\Entity\obj\Debug\Entity.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN\Entity\obj\Debug\Entity.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 27-11-2018 Sin Implementacion de Prorroga\Entity\bin\Debug\Entity.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 27-11-2018 Sin Implementacion de Prorroga\Entity\bin\Debug\Entity.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 27-11-2018 Sin Implementacion de Prorroga\Entity\obj\Debug\Entity.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 27-11-2018 Sin Implementacion de Prorroga\Entity\obj\Debug\Entity.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 21-02-2019\Entity\bin\Debug\Entity.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 21-02-2019\Entity\bin\Debug\Entity.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 21-02-2019\Entity\obj\Debug\Entity.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 21-02-2019\Entity\obj\Debug\Entity.pdb
+F:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\Entity\bin\Debug\Entity.dll
+F:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\Entity\bin\Debug\Entity.pdb
+F:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+F:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\Entity\obj\Debug\Entity.dll
+F:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\Entity\obj\Debug\Entity.pdb
+E:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\Entity\bin\Debug\Entity.dll
+E:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\Entity\bin\Debug\Entity.pdb
+E:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+E:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\Entity\obj\Debug\Entity.dll
+E:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\Entity\obj\Debug\Entity.pdb

@@ -1,0 +1,45 @@
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN\DAL\bin\Release\DAL.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN\DAL\bin\Release\DAL.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN\DAL\bin\Release\Entity.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN\DAL\bin\Release\OtherFunction.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN\DAL\bin\Release\Entity.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN\DAL\bin\Release\OtherFunction.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN\DAL\obj\Release\DAL.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN\DAL\obj\Release\DAL.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 27-11-2018 Sin Implementacion de Prorroga\DAL\bin\Release\DAL.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 27-11-2018 Sin Implementacion de Prorroga\DAL\bin\Release\DAL.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 27-11-2018 Sin Implementacion de Prorroga\DAL\bin\Release\Entity.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 27-11-2018 Sin Implementacion de Prorroga\DAL\bin\Release\OtherFunction.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 27-11-2018 Sin Implementacion de Prorroga\DAL\bin\Release\Entity.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 27-11-2018 Sin Implementacion de Prorroga\DAL\bin\Release\OtherFunction.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 27-11-2018 Sin Implementacion de Prorroga\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 27-11-2018 Sin Implementacion de Prorroga\DAL\obj\Release\DAL.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 27-11-2018 Sin Implementacion de Prorroga\DAL\obj\Release\DAL.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 21-02-2019\DAL\bin\Release\DAL.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 21-02-2019\DAL\bin\Release\DAL.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 21-02-2019\DAL\bin\Release\Entity.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 21-02-2019\DAL\bin\Release\OtherFunction.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 21-02-2019\DAL\bin\Release\Entity.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 21-02-2019\DAL\bin\Release\OtherFunction.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 21-02-2019\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 21-02-2019\DAL\obj\Release\DAL.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 21-02-2019\DAL\obj\Release\DAL.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 28-02-2019\DAL\bin\Release\DAL.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 28-02-2019\DAL\bin\Release\DAL.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 28-02-2019\DAL\bin\Release\Entity.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 28-02-2019\DAL\bin\Release\OtherFunction.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 28-02-2019\DAL\bin\Release\Entity.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 28-02-2019\DAL\bin\Release\OtherFunction.pdb
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 28-02-2019\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 28-02-2019\DAL\obj\Release\DAL.dll
+C:\Users\Renán Rosales\Desktop\SistemaBibliotecarioCCNN 28-02-2019\DAL\obj\Release\DAL.pdb
+E:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\DAL\bin\Release\DAL.dll
+E:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\DAL\bin\Release\DAL.pdb
+E:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\DAL\bin\Release\Entity.dll
+E:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\DAL\bin\Release\OtherFunction.dll
+E:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\DAL\bin\Release\Entity.pdb
+E:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\DAL\bin\Release\OtherFunction.pdb
+E:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+E:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\DAL\obj\Release\DAL.dll
+E:\Respaldo Proyecto\SistemaBibliotecarioCCNN 05-03-2019\DAL\obj\Release\DAL.pdb
